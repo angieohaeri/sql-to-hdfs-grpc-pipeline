@@ -1,4 +1,4 @@
-# Project Overview
+# SQL to HDFS gRPC Pipeline: Project Overview
 This project implements a distributed data system that ingests loan data from a MySQL database, stores it in HDFS, and exposes analytics via a gRPC service. The system is containerized with Docker and designed to be fault-tolerant under DataNode failures.
 
 The pipeline supports efficient querying through Parquet partitioning and includes performance analysis comparing full-dataset scans to partition-based reads.
