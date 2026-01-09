@@ -1,7 +1,7 @@
 # SQL to HDFS gRPC Pipeline: Project Overview
-This project implements a distributed data system that ingests loan data from a MySQL database, stores it in HDFS, and exposes analytics via a gRPC service. The system is containerized with Docker and designed to be fault-tolerant under DataNode failures.
+This project implements a distributed data system that ingests generated bank loan data from a MySQL database, stores it in HDFS, and exposes analytics via a gRPC service. The system is containerized with Docker and designed to be fault tolerant under several types of DataNode failures.
 
-The pipeline supports efficient querying through Parquet partitioning and includes performance analysis comparing full-dataset scans to partition-based reads.
+The pipeline supports efficient and optimized querying through Parquet partitioning and includes a performance analysis comparing full dataset scans to partition reads.
 
 ## Key Features
 
@@ -9,7 +9,7 @@ The pipeline supports efficient querying through Parquet partitioning and includ
 - HDFS storage using PyArrow and Parquet
 - gRPC server exposing data ingestion and analytics APIs
 - Block-level analysis using WebHDFS
-- County-level Parquet partitioning for query optimization
+- Parquet partitioning for query optimization
 - Fault tolerance handling DataNode failures gracefully
 - Automated performance benchmarking and visualization
   
@@ -17,7 +17,7 @@ The pipeline supports efficient querying through Parquet partitioning and includ
 
 - Python
 - MySQL
-- Apache HDFS (NameNode, DataNodes, WebHDFS)
+- Apache HDFS
 - PyArrow & Parquet
 - gRPC
 - Docker & Docker Compose
